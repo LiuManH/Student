@@ -18,3 +18,10 @@ $this->first_name = 'ManHua';
 $this->emails = array('2639089532@qq.com');
 $this->grades = array('set2');
 }
+
+function add_email($which,$address) {
+$this->emails[$which] = $address;
+}
+function add_grade($grade) {
+$this->grades[] = $grade;
+}
