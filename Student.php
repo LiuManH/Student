@@ -14,10 +14,10 @@
 class Student {
 
     function __construct() {
-        $this->surname = 'Liu';
-        $this->first_name = 'ManHua';
-        $this->emails = array('2639089532@qq.com');
-        $this->grades = array('set2');
+        $this->surname = '';
+        $this->first_name = '';
+        $this->emails = array();
+        $this->grades = array();
     }
 
     function add_email($which, $address) {
