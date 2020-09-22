@@ -13,7 +13,7 @@
  */
 class Student {
 
-    function __construct() {
+    function __construct() {s
         $this->surname = 'Liu';
         $this->first_name = 'ManHua';
         $this->emails = array('2639089532@qq.com');
