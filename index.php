@@ -8,12 +8,16 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <style>
+            body{background: #20b2aa;}
+        </style>
     </head>
     <body>
         <?php
         include('Student.php');
         $students = array();
 
+        echo "<div>";
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -23,6 +27,7 @@ and open the template in the editor.
         $first->add_grade(75);
         $first->add_grade(55);
         $students['j123'] = $first;
+        echo "</div>";
         
         $second = new Student();
         $second->surname = "Einstein";
@@ -34,7 +39,7 @@ and open the template in the editor.
         $second->add_grade(80);
         $second->add_grade(50);
         $students['a456'] = $second;
-        
+
         $third = new Student();
         $third->surname = "Liu";
         $third->first_name = "ManHua";
@@ -43,8 +48,8 @@ and open the template in the editor.
         $third->add_grade(90);
         $third->add_grade(90);
         $students['b777'] = $third;
-        
-         $fourth = new Student();
+
+        $fourth = new Student();
         $fourth->surname = "Li";
         $fourth->first_name = "QianQian";
         $fourth->add_email('study', '2639089532@qq.com');
@@ -54,7 +59,7 @@ and open the template in the editor.
         $fourth->add_grade(70);
         $fourth->add_grade(60);
         $students['c999'] = $fourth;
-        
+
         foreach ($students as $student)
             echo $student->toString();
         ?>
